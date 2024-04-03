@@ -13,8 +13,8 @@ public class Fruit : MonoBehaviour
     }
 
 
-    // private void OnDestroy()
-    // {
-    //     GameManager.Instance.DecreaseScore();
-    // }
+    private void OnDestroy()
+    {
+        GameManager.Instance.DecreaseScore();
+    }
 }
