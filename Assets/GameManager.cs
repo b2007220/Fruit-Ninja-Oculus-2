@@ -1,6 +1,7 @@
 using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
 
   private int score;
   private int hearts;
+
+  private bool isDoubleScoreActive = false;
 
   private void Start()
   {
@@ -44,7 +47,15 @@ public class GameManager : MonoBehaviour
 
   public void IncreaseScore()
   {
-    score += 10;
+    if (isDoubleScoreActive)
+    {
+      score += 20; // Tăng lên gấp đôi nên cộng thêm 20 điểm
+    }
+    else
+    {
+      score += 10;
+    }
+
     //scoreText.text = score.ToString();
     scoreTextMesh.text = score.ToString();
   }
@@ -64,4 +75,35 @@ public class GameManager : MonoBehaviour
       }
     }
   }
+
+  public void IncreaseHearts(int heartsToAdd)
+  {
+    // Tăng số lượng hearts
+    hearts += heartsToAdd;
+
+    // Cập nhật hiển thị số lượng hearts
+    HeartsTextMesh.text = hearts.ToString();
+  }
+
+  public void ActivateDoubleScore(float duration)
+  {
+    if (!isDoubleScoreActive)
+    {
+      StartCoroutine(DoubleScoreTimer(duration));
+    }
+    else
+    {
+      // Nếu DoubleScore đã được kích hoạt trước đó, chỉ cập nhật lại thời gian.
+      StopCoroutine("DoubleScoreTimer");
+      StartCoroutine(DoubleScoreTimer(duration));
+    }
+  }
+
+  private IEnumerator DoubleScoreTimer(float duration)
+  {
+    isDoubleScoreActive = true;
+    yield return new WaitForSeconds(duration);
+    isDoubleScoreActive = false;
+  }
+
 }

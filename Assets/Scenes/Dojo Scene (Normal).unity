@@ -7826,6 +7826,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FruitTurret2
       objectReference: {fileID: 0}
+    - target: {fileID: 3524986394299528961, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: target
@@ -14422,12 +14427,12 @@ PrefabInstance:
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootDelay
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootForce
-      value: 0.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
@@ -27023,6 +27028,7 @@ GameObject:
   - component: {fileID: 1106507925}
   - component: {fileID: 1106507924}
   - component: {fileID: 1106507926}
+  - component: {fileID: 1106507927}
   m_Layer: 0
   m_Name: carpete central_Material #716_0
   m_TagString: Untagged
@@ -27109,6 +27115,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: ea0c35c7d62aa2b4793658ff8c34c5b6, type: 2}
+--- !u!114 &1106507927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106507922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee91302b7dbec9d42a3960f772ee5f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerUpPrefabs:
+  - {fileID: 8449068647432487215, guid: 5b60c123e23cdfc419c96d084b78a02f, type: 3}
+  - {fileID: 5285892602841293987, guid: bc34a1e996e115c42933d40ac1182384, type: 3}
+  spawnInterval: 10
+  spawnRadius: 5
+  spawnHeight: 3
+  rotationAngleX: 90
+  rotationAngleY: 120
+  despawnDelay: 5
 --- !u!1 &1107191065
 GameObject:
   m_ObjectHideFlags: 0
