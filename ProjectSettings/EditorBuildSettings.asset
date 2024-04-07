@@ -8,12 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game Menu Scene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 0
-    path: Assets/Scenes/Sword Scene.unity
-    guid: 27ebf7ea138e6a449ad8120c5df70b68
-  - enabled: 0
-    path: Assets/Scenes/Archer Scene.unity
-    guid: b1a3f4d71f1582b40893ca3cd6db980f
   - enabled: 1
     path: Assets/Scenes/Dojo Scene (Normal).unity
     guid: acfc2440fc049334582c8251e401d0ac

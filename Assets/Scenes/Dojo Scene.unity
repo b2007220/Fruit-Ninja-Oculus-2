@@ -7838,6 +7838,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
+      propertyPath: shootForce
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
       propertyPath: reloadAfter
       value: 15
       objectReference: {fileID: 0}
@@ -7849,25 +7854,25 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.size
-      value: 15
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 2f597e4cdb54b7e469045f9519b51113,
+      objectReference: {fileID: 11400000, guid: 5405dffb812ad9e42a5ded3bec7a6f6e,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 67c6850305e2fd248a83435b3ab85b41,
+      objectReference: {fileID: 11400000, guid: 29954633c29b9254ea3545f851fac92b,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 29954633c29b9254ea3545f851fac92b,
+      objectReference: {fileID: 11400000, guid: 67c6850305e2fd248a83435b3ab85b41,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -7879,31 +7884,31 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 8f4669cd418ce2c4fb779775bd552c56,
+      objectReference: {fileID: 11400000, guid: 2f597e4cdb54b7e469045f9519b51113,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 2f597e4cdb54b7e469045f9519b51113,
+      objectReference: {fileID: 11400000, guid: d521aa8198748b246b7762725a91908f,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 29954633c29b9254ea3545f851fac92b,
+      objectReference: {fileID: 11400000, guid: ded330bf163b39549b51668e91372fa0,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: 2f597e4cdb54b7e469045f9519b51113,
+      objectReference: {fileID: 11400000, guid: 9e5b82c4d4e3279459436538adebdab0,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: 8f4669cd418ce2c4fb779775bd552c56,
+      objectReference: {fileID: 11400000, guid: 5962f955e87f07646b6bc1d9ce95cf96,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -7944,7 +7949,7 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -27053,7 +27058,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106507922}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee91302b7dbec9d42a3960f772ee5f0f, type: 3}
   m_Name: 
@@ -30959,6 +30964,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b912ef23c8411b84090cf3bbb573c521, type: 2}
+--- !u!1 &1240973413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3524986394299528961, guid: 4a9eb15f456c0814f9b3377e006f642c,
+    type: 3}
+  m_PrefabInstance: {fileID: 321490815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1242238703
 GameObject:
   m_ObjectHideFlags: 0
@@ -45689,9 +45700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOver: {fileID: 1444957077}
   Turrets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1240973413}
   scoreTextMesh: {fileID: 548159899}
   scoreValueMesh: {fileID: 1755324178}
   HeartsTextMesh: {fileID: 662929319}
@@ -50704,17 +50713,17 @@ PrefabInstance:
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 62.7
+      value: 64.9
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 54.18
+      value: 54.45
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 45.83
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 4134505312059479865, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}

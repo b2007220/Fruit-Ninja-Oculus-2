@@ -7843,8 +7843,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
+      propertyPath: shootForce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
       propertyPath: reloadAfter
       value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootLifeTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -7854,25 +7864,25 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.size
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 5ca0f12184d86504083359b88a5c77b6,
+      objectReference: {fileID: 11400000, guid: 76dfe918bc29fe5469bc5552fe40086b,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 5962f955e87f07646b6bc1d9ce95cf96,
+      objectReference: {fileID: 11400000, guid: 76dfe918bc29fe5469bc5552fe40086b,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 76dfe918bc29fe5469bc5552fe40086b,
+      objectReference: {fileID: 11400000, guid: 1b9262d655232e44083acf1d7ccf8b3c,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -7884,31 +7894,31 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
+      objectReference: {fileID: 11400000, guid: 5962f955e87f07646b6bc1d9ce95cf96,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 1b9262d655232e44083acf1d7ccf8b3c,
+      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 5962f955e87f07646b6bc1d9ce95cf96,
+      objectReference: {fileID: 11400000, guid: 2728ea6e1de695a479fc87f6cb248105,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: de9923347d9895e40a89dd19cf8cae41,
+      objectReference: {fileID: 11400000, guid: 5ca0f12184d86504083359b88a5c77b6,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
+      objectReference: {fileID: 11400000, guid: da520ab0326eec744a449147ffac7f36,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -7949,43 +7959,61 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.size
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 1947772663093849101, guid: 9872695c4b1c23841bf8f5cd4708e94b,
+      objectReference: {fileID: 3650803961311379746, guid: e67ed429949d69e47a5c592feb743a56,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 3179908581119283524, guid: 309ffafc20b610c46912755941e9fe33,
+      objectReference: {fileID: 2819449436908050812, guid: 0262251b0144cc946bc91980dfc22ae1,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 5116689106472705085, guid: 395ed9beab9ab3649b6d240e51c509bc,
+      objectReference: {fileID: 7398775571687539565, guid: 143930181e66aaf40a4caeb380fcf897,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 7398775571687539565, guid: 143930181e66aaf40a4caeb380fcf897,
+      objectReference: {fileID: 1947772663093849101, guid: 6aa2be60ebed04346b4cbd362f2e6fea,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 5674698358082361460, guid: 0974f6e013453bc42963cbe42019581d,
+      objectReference: {fileID: 3179908581119283524, guid: 309ffafc20b610c46912755941e9fe33,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[5]
       value: 
-      objectReference: {fileID: 1947772663093849101, guid: 6aa2be60ebed04346b4cbd362f2e6fea,
+      objectReference: {fileID: 3650803961311379746, guid: e67ed429949d69e47a5c592feb743a56,
+        type: 3}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: projectilePrefabs.Array.data[6]
+      value: 
+      objectReference: {fileID: 8449068647432487215, guid: 5b60c123e23cdfc419c96d084b78a02f,
+        type: 3}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: projectilePrefabs.Array.data[7]
+      value: 
+      objectReference: {fileID: 5285892602841293987, guid: bc34a1e996e115c42933d40ac1182384,
+        type: 3}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: projectilePrefabs.Array.data[8]
+      value: 
+      objectReference: {fileID: 5285892602841293987, guid: bc34a1e996e115c42933d40ac1182384,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a9eb15f456c0814f9b3377e006f642c, type: 3}
@@ -8527,6 +8555,12 @@ Transform:
   m_Father: {fileID: 1739381656}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &344436410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3524986394299528961, guid: 4a9eb15f456c0814f9b3377e006f642c,
+    type: 3}
+  m_PrefabInstance: {fileID: 321490815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &345619784
 GameObject:
   m_ObjectHideFlags: 0
@@ -14432,12 +14466,17 @@ PrefabInstance:
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootForce
-      value: 1.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: reloadAfter
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
+        type: 3}
+      propertyPath: shootLifeTime
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
@@ -14453,31 +14492,31 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 2728ea6e1de695a479fc87f6cb248105,
+      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootWaves.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: de9923347d9895e40a89dd19cf8cae41,
+      objectReference: {fileID: 11400000, guid: 2728ea6e1de695a479fc87f6cb248105,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootWaves.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
+      objectReference: {fileID: 11400000, guid: de9923347d9895e40a89dd19cf8cae41,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootWaves.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 76dfe918bc29fe5469bc5552fe40086b,
+      objectReference: {fileID: 11400000, guid: 1b9262d655232e44083acf1d7ccf8b3c,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootWaves.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 5ca0f12184d86504083359b88a5c77b6,
+      objectReference: {fileID: 11400000, guid: da520ab0326eec744a449147ffac7f36,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
@@ -14489,19 +14528,19 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 2728ea6e1de695a479fc87f6cb248105,
+      objectReference: {fileID: 11400000, guid: b3f97e9b1420a084c9a07f563f51b0ee,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootWaves.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: 1b9262d655232e44083acf1d7ccf8b3c,
+      objectReference: {fileID: 11400000, guid: 76dfe918bc29fe5469bc5552fe40086b,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootWaves.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: 5962f955e87f07646b6bc1d9ce95cf96,
+      objectReference: {fileID: 11400000, guid: 5ca0f12184d86504083359b88a5c77b6,
         type: 2}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
@@ -14630,6 +14669,12 @@ Transform:
   m_Father: {fileID: 408653831}
   m_RootOrder: 191
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &573611500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3257979010432877485, guid: 47c06382fcf2aa2458b546faf1787d80,
+    type: 3}
+  m_PrefabInstance: {fileID: 1544057946}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &574525233
 GameObject:
   m_ObjectHideFlags: 0
@@ -27122,7 +27167,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106507922}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee91302b7dbec9d42a3960f772ee5f0f, type: 3}
   m_Name: 
@@ -31355,6 +31400,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 91942641cf057b54d90b6d6601511289, type: 2}
+--- !u!1 &1246881608 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4782638649057553211, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 568764754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1247685584
 GameObject:
   m_ObjectHideFlags: 0
@@ -38877,13 +38928,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
+      propertyPath: shootForce
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
+        type: 3}
       propertyPath: reloadAfter
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
       propertyPath: shootLifeTime
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
@@ -38905,13 +38961,13 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 5ca0f12184d86504083359b88a5c77b6,
+      objectReference: {fileID: 11400000, guid: 76dfe918bc29fe5469bc5552fe40086b,
         type: 2}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
       propertyPath: shootWaves.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
+      objectReference: {fileID: 11400000, guid: 2728ea6e1de695a479fc87f6cb248105,
         type: 2}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
@@ -38923,31 +38979,31 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 2728ea6e1de695a479fc87f6cb248105,
+      objectReference: {fileID: 11400000, guid: da520ab0326eec744a449147ffac7f36,
         type: 2}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
       propertyPath: shootWaves.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: b3f97e9b1420a084c9a07f563f51b0ee,
+      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
         type: 2}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
       propertyPath: shootWaves.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 5962f955e87f07646b6bc1d9ce95cf96,
+      objectReference: {fileID: 11400000, guid: 5ca0f12184d86504083359b88a5c77b6,
         type: 2}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
       propertyPath: shootWaves.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: 5ca0f12184d86504083359b88a5c77b6,
+      objectReference: {fileID: 11400000, guid: 1b9262d655232e44083acf1d7ccf8b3c,
         type: 2}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
       propertyPath: shootWaves.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: da520ab0326eec744a449147ffac7f36,
+      objectReference: {fileID: 11400000, guid: 5962f955e87f07646b6bc1d9ce95cf96,
         type: 2}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
@@ -45818,9 +45874,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOver: {fileID: 1444957077}
   Turrets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 573611500}
+  - {fileID: 1246881608}
+  - {fileID: 344436410}
   scoreTextMesh: {fileID: 548159899}
   scoreValueMesh: {fileID: 1755324178}
   HeartsTextMesh: {fileID: 662929319}

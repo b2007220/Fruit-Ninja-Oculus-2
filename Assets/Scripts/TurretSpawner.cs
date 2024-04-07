@@ -62,7 +62,9 @@ public class TurretSpawner : MonoBehaviour
     private IEnumerator Shoot()
     {
         yield return new WaitForSeconds(5f);
-        int shootIndex = 0;
+
+        // int shootIndex = 0;
+
         while (enabled)
         {
             // throw projectile at at player
@@ -82,27 +84,50 @@ public class TurretSpawner : MonoBehaviour
 
             GameObject randomPrefab = projectilePrefabs[Random.Range(0, projectilePrefabs.Length)];
 
-            foreach (ShootInfo shootInfo in shootWaves[shootIndex].shootInfos)
-            {
 
+
+            // get order of shoot wave
+            // foreach (ShootInfo shootInfo in shootWaves[shootIndex].shootInfos)
+            // {
+
+            //     GameObject projectile = Instantiate(randomPrefab, projectileSpawnPoint.position, Quaternion.identity);
+
+            //     // set projectile direction
+
+            //     projectile.transform.forward = direction + shootInfo.deviation;
+
+            //     // set projectile force
+
+            //     projectile.GetComponent<Rigidbody>().AddForce((direction + shootInfo.deviation) * shootForce, ForceMode.Impulse);
+
+            //     // destroy projectile after lifetime
+
+            //     Destroy(projectile, shootLifeTime);
+
+            // }
+
+            // increment shoot index
+            // shootIndex = (shootIndex + 1) % shootWaves.Length;
+
+            // get random shoot wave
+
+            int randomShootIndex = Random.Range(0, shootWaves.Length);
+
+            ShootWave randomShootWave = shootWaves[randomShootIndex];
+
+            foreach (ShootInfo shootInfo in randomShootWave.shootInfos)
+            {
                 GameObject projectile = Instantiate(randomPrefab, projectileSpawnPoint.position, Quaternion.identity);
 
                 // set projectile direction
-
                 projectile.transform.forward = direction + shootInfo.deviation;
 
                 // set projectile force
-
                 projectile.GetComponent<Rigidbody>().AddForce((direction + shootInfo.deviation) * shootForce, ForceMode.Impulse);
 
                 // destroy projectile after lifetime
-
                 Destroy(projectile, shootLifeTime);
-
             }
-
-            // increment shoot index
-            shootIndex = (shootIndex + 1) % shootWaves.Length;
 
             // add 1 to projectile count
 
