@@ -17,10 +17,10 @@ public class TurretSpawner : MonoBehaviour
     public GameObject target;
     public Transform projectileSpawnPoint;
     public float shootForce = 1.5f;
-    public float shootDelay = 2f;
+    public float shootDelay = 3f;
     public float shootRadius = 5f;
     public float shootAngle = 25f;
-    public float shootLifeTime = 5f;
+    public float shootLifeTime = 2f;
 
     public ShootWave[] shootWaves;
 

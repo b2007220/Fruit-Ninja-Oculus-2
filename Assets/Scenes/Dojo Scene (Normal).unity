@@ -7839,7 +7839,7 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootDelay
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -14461,7 +14461,7 @@ PrefabInstance:
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
       propertyPath: shootDelay
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4782638650188556291, guid: 0be187a1f0f15b54ca1c2fce3e8fea3a,
         type: 3}
@@ -26328,6 +26328,7 @@ MonoBehaviour:
   m_RepeatDelay: 0.5
   m_RepeatRate: 0.1
   m_TrackedDeviceDragThresholdMultiplier: 1.4
+  m_TrackedScrollDeltaMultiplier: 5
   m_ActiveInputMode: 0
   m_MaxTrackedDeviceRaycastDistance: 1000
   m_EnableXRInput: 1
@@ -30285,6 +30286,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -38924,7 +38926,7 @@ PrefabInstance:
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}
       propertyPath: shootDelay
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3257979012009578513, guid: 47c06382fcf2aa2458b546faf1787d80,
         type: 3}

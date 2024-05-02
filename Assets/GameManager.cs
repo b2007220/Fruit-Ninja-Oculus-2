@@ -63,8 +63,14 @@ public class GameManager : MonoBehaviour
   {
     hearts -= 1;
     //HeartsText.text = hearts.ToString();
+    if (hearts > 0){
+      HeartsTextMesh.text = hearts.ToString();
+    }
+    else{
+      HeartsTextMesh.text = "0";
+    }
     HeartsTextMesh.text = hearts.ToString();
-    if (hearts <= 0)
+    if (hearts == 0)
     {
       GameOver.SetActive(true);
       //scoreValue.text=score.ToString();
