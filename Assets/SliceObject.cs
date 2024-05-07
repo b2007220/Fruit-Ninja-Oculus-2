@@ -35,6 +35,7 @@ public class SliceObject : MonoBehaviour
     }
 
     public void Slice(GameObject target){
+        target.GetComponent<Fruit>().SetSliced(true);
         MeshRenderer mesh=target.GetComponent<MeshRenderer>();
         BoxCollider collider=target.GetComponent<BoxCollider>();
         MeshCollider meshCollider=target.GetComponent<MeshCollider>();

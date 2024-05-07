@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
   public void NewGame()
   {
     score = 0;
-    hearts = 3;
+    hearts = 15;
     //scoreText.text = score.ToString();
     //HeartsText.text = hearts.ToString();
 
@@ -61,9 +61,10 @@ public class GameManager : MonoBehaviour
   }
   public void DecreaseScore()
   {
-    hearts -= 1;
     //HeartsText.text = hearts.ToString();
     if (hearts > 0){
+      hearts -= 1;
+
       HeartsTextMesh.text = hearts.ToString();
     }
     else{

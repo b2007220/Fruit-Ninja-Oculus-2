@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Fruit : MonoBehaviour
 {
+    private bool isSliced = false;
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Fruit")
@@ -12,9 +13,15 @@ public class Fruit : MonoBehaviour
         };
     }
 
+    public void SetSliced(bool sliced)
+    {
+        isSliced = sliced;
+    }
 
     private void OnDestroy()
     {
-        GameManager.Instance.DecreaseScore();
+        if (!isSliced){
+            GameManager.Instance.DecreaseScore();
+        }
     }
 }

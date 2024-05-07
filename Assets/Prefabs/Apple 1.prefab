@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 7376479400778363128}
   m_Layer: 6
   m_Name: Apple 1
-  m_TagString: Untagged
+  m_TagString: Fruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,14 +29,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2819449436908050812}
+  serializedVersion: 2
   m_LocalRotation: {x: -0.0030854456, y: 0.7071001, z: 0.70710003, w: 0.0030854458}
   m_LocalPosition: {x: 11.26, y: 1.43, z: 11.48}
-  m_LocalScale: {x: 25.000002, y: 25.000002, z: 33.013233}
+  m_LocalScale: {x: 20, y: 20, z: 26.410587}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1500082934315273013}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2000928003565751395
 MeshFilter:
@@ -67,8 +67,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -9103484930961366303, guid: 0fa336c3de4307141a54b2c4d29ef160, type: 3}
-  - {fileID: -257453486697514231, guid: 0fa336c3de4307141a54b2c4d29ef160, type: 3}
-  - {fileID: 1812647522408553600, guid: 0fa336c3de4307141a54b2c4d29ef160, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -193,10 +191,21 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2819449436908050812}
-  serializedVersion: 2
+  serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -210,9 +219,17 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2819449436908050812}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Size: {x: 0.021594115, y: 0.021497995, z: 0.018049572}
   m_Center: {x: 0.00029809924, y: -0.0007150228, z: 0.002549328}
 --- !u!114 &7376479400778363128
@@ -232,6 +249,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 3200760810748249030}
     m_Modifications:
     - target: {fileID: 114387828131215454, guid: 15483e51212e3d74886ea57291f4639a,
@@ -249,6 +267,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 4553287630450876385, guid: 15483e51212e3d74886ea57291f4639a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4553287630450876386, guid: 15483e51212e3d74886ea57291f4639a,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -257,7 +280,7 @@ PrefabInstance:
     - target: {fileID: 4553287630450876387, guid: 15483e51212e3d74886ea57291f4639a,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4553287630450876387, guid: 15483e51212e3d74886ea57291f4639a,
         type: 3}
@@ -372,7 +395,7 @@ PrefabInstance:
     - target: {fileID: 4553287630628875846, guid: 15483e51212e3d74886ea57291f4639a,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4553287630628875846, guid: 15483e51212e3d74886ea57291f4639a,
         type: 3}
@@ -402,7 +425,7 @@ PrefabInstance:
     - target: {fileID: 5287935014664579231, guid: 15483e51212e3d74886ea57291f4639a,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5287935014664579231, guid: 15483e51212e3d74886ea57291f4639a,
         type: 3}
@@ -420,6 +443,9 @@ PrefabInstance:
       value: 0.8577132
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15483e51212e3d74886ea57291f4639a, type: 3}
 --- !u!4 &1500082934315273013 stripped
 Transform:

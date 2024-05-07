@@ -85,7 +85,6 @@ public class TurretSpawner : MonoBehaviour
             GameObject randomPrefab = projectilePrefabs[Random.Range(0, projectilePrefabs.Length)];
 
 
-
             // get order of shoot wave
             // foreach (ShootInfo shootInfo in shootWaves[shootIndex].shootInfos)
             // {
