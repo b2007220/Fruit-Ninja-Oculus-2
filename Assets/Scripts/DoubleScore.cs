@@ -11,7 +11,7 @@ public class DoubleScore : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Kiểm tra nếu người chơi va chạm với đối tượng Double Score
-        if (other.CompareTag("Player"))
+        if (!(other.CompareTag("Fruit") || other.CompareTag("Bomb")))
         {
             // Kích hoạt tính năng Double Score trong GameManager
             GameManager.Instance.ActivateDoubleScore(duration);
@@ -23,7 +23,8 @@ public class DoubleScore : MonoBehaviour
             }
 
             // Tắt đối tượng Double Score sau khi được kích hoạt
-            gameObject.SetActive(false);
+            Destroy(gameObject);
+
         }
     }
 }

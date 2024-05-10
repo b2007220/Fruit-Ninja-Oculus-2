@@ -37,8 +37,10 @@ public class PowerUpSpawner : MonoBehaviour
 
             // Tính toán vị trí spawn xung quanh vị trí của PowerUpSpawner
             Vector3 randomOffset = Random.insideUnitSphere * spawnRadius;
+            randomOffset.y = Mathf.Abs(randomOffset.y); // Đảm bảo offset y là dương
 
-            Vector3 spawnPosition = transform.position + new Vector3(0, spawnHeight, 0);
+            // Tính toán vị trí spawn, không có phần tử y
+            Vector3 spawnPosition = transform.position + new Vector3(randomOffset.x, spawnHeight, randomOffset.z);
 
             // Spawn power-up
             GameObject spawnedPowerUp = Instantiate(selectedPowerUpPrefab, spawnPosition, Quaternion.identity);

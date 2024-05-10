@@ -8294,7 +8294,7 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootDelay
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -8319,7 +8319,7 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.size
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -8355,7 +8355,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: d521aa8198748b246b7762725a91908f,
+      objectReference: {fileID: 11400000, guid: 9e5b82c4d4e3279459436538adebdab0,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -8367,8 +8367,7 @@ PrefabInstance:
         type: 3}
       propertyPath: shootWaves.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: 9e5b82c4d4e3279459436538adebdab0,
-        type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[8]
@@ -8420,31 +8419,31 @@ PrefabInstance:
         type: 3}
       propertyPath: projectilePrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 1947772663093849101, guid: 9872695c4b1c23841bf8f5cd4708e94b,
+      objectReference: {fileID: 7398775571687539565, guid: 143930181e66aaf40a4caeb380fcf897,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 3179908581119283524, guid: 309ffafc20b610c46912755941e9fe33,
+      objectReference: {fileID: 1947772663093849101, guid: 9872695c4b1c23841bf8f5cd4708e94b,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 5116689106472705085, guid: 395ed9beab9ab3649b6d240e51c509bc,
+      objectReference: {fileID: 3179908581119283524, guid: 309ffafc20b610c46912755941e9fe33,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[3]
       value: 
-      objectReference: {fileID: 7398775571687539565, guid: 143930181e66aaf40a4caeb380fcf897,
+      objectReference: {fileID: 5674698358082361460, guid: 0974f6e013453bc42963cbe42019581d,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[4]
       value: 
-      objectReference: {fileID: 5674698358082361460, guid: 0974f6e013453bc42963cbe42019581d,
+      objectReference: {fileID: 5116689106472705085, guid: 395ed9beab9ab3649b6d240e51c509bc,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -17202,7 +17201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 697c875315f85694c88d7c366a79c7a8, type: 2}
   m_sharedMaterial: {fileID: 7481911971482983824, guid: 697c875315f85694c88d7c366a79c7a8,
@@ -45942,7 +45941,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: 3
+  m_Text: '5
+
+'
 --- !u!222 &1769824785
 CanvasRenderer:
   m_ObjectHideFlags: 0

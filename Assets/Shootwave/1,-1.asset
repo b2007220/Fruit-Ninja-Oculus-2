@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: 1,-1
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 0}
-  deviation: {x: 0, y: -1, z: 1}
+  deviation: {x: 0, y: 1.1, z: 0.4}

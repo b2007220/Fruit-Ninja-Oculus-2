@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
   public void NewGame()
   {
     score = 0;
-    hearts = 15;
+    hearts = 5;
     //scoreText.text = score.ToString();
     //HeartsText.text = hearts.ToString();
 

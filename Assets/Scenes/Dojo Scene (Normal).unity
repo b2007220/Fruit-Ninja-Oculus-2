@@ -17188,7 +17188,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 15
+  m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 697c875315f85694c88d7c366a79c7a8, type: 2}
   m_sharedMaterial: {fileID: 7481911971482983824, guid: 697c875315f85694c88d7c366a79c7a8,
@@ -28449,21 +28449,19 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106507922}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee91302b7dbec9d42a3960f772ee5f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   powerUpPrefabs:
   - {fileID: 8449068647432487215, guid: 5b60c123e23cdfc419c96d084b78a02f, type: 3}
-  - {fileID: 5285892602841293987, guid: bc34a1e996e115c42933d40ac1182384, type: 3}
-  - {fileID: 3650803961311379746, guid: e67ed429949d69e47a5c592feb743a56, type: 3}
   spawnInterval: 10
   spawnRadius: 5
-  spawnHeight: 3
+  spawnHeight: 0.2
   rotationAngleX: 90
   rotationAngleY: 120
-  despawnDelay: 5
+  despawnDelay: 10
 --- !u!1 &1107191065
 GameObject:
   m_ObjectHideFlags: 0
@@ -31643,7 +31641,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1210817436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -48229,7 +48227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1865632421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53578,6 +53576,11 @@ PrefabInstance:
       propertyPath: m_MoveSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3127728407712097246, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_TrackingStateInput.m_Action.m_Name
+      value: Tracking State Input
+      objectReference: {fileID: 0}
     - target: {fileID: 3415145736139425353, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_IsActive
@@ -54800,6 +54803,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FruitTurret2
       objectReference: {fileID: 0}
+    - target: {fileID: 3524986394299528961, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: target
@@ -54807,8 +54815,13 @@ PrefabInstance:
       objectReference: {fileID: 717680256}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
+      propertyPath: shootDelay
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
       propertyPath: shootForce
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -54818,7 +54831,7 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootLifeTime
-      value: 99
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -54828,36 +54841,84 @@ PrefabInstance:
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.size
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: shootWaves.Array.data[0]
       value: 
+      objectReference: {fileID: 11400000, guid: 1b9262d655232e44083acf1d7ccf8b3c,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootWaves.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: de9923347d9895e40a89dd19cf8cae41,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootWaves.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: bf66d1ef06991e14e98dfb6febdc7d94,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootWaves.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 76dfe918bc29fe5469bc5552fe40086b,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootWaves.Array.data[4]
+      value: 
       objectReference: {fileID: 11400000, guid: b3f97e9b1420a084c9a07f563f51b0ee,
         type: 2}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
+      propertyPath: shootWaves.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: da520ab0326eec744a449147ffac7f36,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootWaves.Array.data[6]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2728ea6e1de695a479fc87f6cb248105,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootWaves.Array.data[7]
+      value: 
+      objectReference: {fileID: 11400000, guid: da520ab0326eec744a449147ffac7f36,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
+      propertyPath: shootWaves.Array.data[8]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b9262d655232e44083acf1d7ccf8b3c,
+        type: 2}
+    - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
+        type: 3}
       propertyPath: projectilePrefabs.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[0]
       value: 
-      objectReference: {fileID: 2819449436908050812, guid: 0262251b0144cc946bc91980dfc22ae1,
+      objectReference: {fileID: 1947772663093849101, guid: 9872695c4b1c23841bf8f5cd4708e94b,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 3179908581119283524, guid: 309ffafc20b610c46912755941e9fe33,
+      objectReference: {fileID: 7398775571687539565, guid: 143930181e66aaf40a4caeb380fcf897,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 7654153190414423019, guid: f4c97ed7728cdca46b21c754b6e57336,
+      objectReference: {fileID: 2819449436908050812, guid: 0262251b0144cc946bc91980dfc22ae1,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
@@ -54875,13 +54936,13 @@ PrefabInstance:
         type: 3}
       propertyPath: projectilePrefabs.Array.data[5]
       value: 
-      objectReference: {fileID: 1947772663093849101, guid: 6aa2be60ebed04346b4cbd362f2e6fea,
+      objectReference: {fileID: 3179908581119283524, guid: 309ffafc20b610c46912755941e9fe33,
         type: 3}
     - target: {fileID: 3524986394408447127, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
       propertyPath: projectilePrefabs.Array.data[6]
       value: 
-      objectReference: {fileID: 1721382494072076519, guid: dfbc34477404005418cf727494aa459f,
+      objectReference: {fileID: 1947772663093849101, guid: 6aa2be60ebed04346b4cbd362f2e6fea,
         type: 3}
     - target: {fileID: 3524986394408447129, guid: 4a9eb15f456c0814f9b3377e006f642c,
         type: 3}
